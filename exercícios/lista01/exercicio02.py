@@ -42,6 +42,7 @@ def calcular_salario_total(salario_base, total_vendas, porcentagem_comissao):
 
 def main():
     print("Calculadora de Salário do Vendedor")
+    print(f"====================================")
     
     # Ler dados do vendedor
     salario_base = ler_salario_base()
