@@ -1,7 +1,6 @@
 # This is a simple Python script to print "Hello world!"
 print("Hello world!")
-print("--")
-print()
+print(f"--")
 
 # Additional functionality can be added here
 # For example, we can define a function to greet a user
