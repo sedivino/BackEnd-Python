@@ -58,11 +58,11 @@ def main():
 
     # Usando if-else
     categoria_ifelse = classifica_nadador_ifelse(idade)
-    print(f"Classificação (if-else): {categoria_ifelse}")
+    print(f"O nadador que tem {idade} anos está na categoria: {categoria_ifelse}")
 
     # Usando match-case
     categoria_match = classifica_nadador_match(idade)
-    print(f"Classificação (match-case): {categoria_match}")
+    print(f"O nadador que tem {idade} anos está na categoria {categoria_match}")
 
 if __name__ == "__main__":
     main()
