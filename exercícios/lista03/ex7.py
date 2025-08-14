@@ -21,6 +21,11 @@ def recebe_float_positivo(mensagem, minimo=0, inteiro=False):
             print("Entrada inválida. Digite um valor numérico válido.")
 
 def calcula_comissao(vendas: float) -> float:
+    """
+    Calcula a comissão com base nas regras:
+    - 3% até R$ 10.000
+    - 5% sobre o excedente
+    """
     if vendas <= LIMITE_COMISSAO:
         return vendas * TAXA1
     else:
