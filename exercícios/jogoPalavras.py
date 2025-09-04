@@ -15,8 +15,14 @@ print("Você tem", tentativas, "tentativas para adivinhar a palavra.")
 print(" ".join(letras_acertadas))
 
 while tentativas > 0 and '_' in letras_acertadas:
-    letra = input("Digite uma letra: ").lower()
+    letra = input("Digite uma letra: (Digite 0 para sair) ").lower()
 
+    # Condição de saída:
+    if letra == '0':
+        print("Você saiu do jogo. A palavra era:", palavra)
+        break
+
+    # Validação de entrada
     if len(letra) != 1 or not letra.isalpha():
         print("Por favor, digite apenas uma letra.")
         continue
