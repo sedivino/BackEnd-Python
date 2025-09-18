@@ -22,23 +22,20 @@ class Retangulo:
     
     # Método para calcular a área:
     def area(self):
-        return f'Área = {(self.__base * self.__altura)}'
+        return (self.__base * self.__altura)
     
     # Método para calcular o perímetro:
     def perimetro(self):
-        return f'Perímetro = {(2*self.__altura + 2*self.__base)}'
+        return (2*self.__altura + 2*self.__base)
     
     # Método para calcular a proporção do retângulo:
     def relacao(self):
-        return f'Relação = {(self.__base / self.__altura)}'
+        return (self.__base / self.__altura)
     
     # Método para dizer se é um quadrado:
     def ehQuadrado(self):
-        if self.__base == self.__altura:
-            return f'É um quadrado.'
-        else:
-            return f'Não é um quadrado.'
-
+        return self.__base == self.__altura
+    
     # Método que exibe as dimenções do retângulo:
     def __str__(self):
         return f'Retângulo tem base = {self.__base} e altura = {self.__altura}.'    

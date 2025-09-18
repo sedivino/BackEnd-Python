@@ -7,17 +7,29 @@ from ex2 import Retangulo
 r1 = Retangulo()
 r2 = Retangulo(2, 5)
 
+# Mostra os dados dos objetos:
 print('=== Triangulo 1 ===')
 print(str(r1))
-print(r1.area())
-print(r1.perimetro())
-print(r1.relacao())
-print(r1.ehQuadrado())
-print("")
+print("Aréa = ", r1.area())
+print("Perímetro = ", r1.perimetro())
+print("Relação = ", r1.relacao())
 
+if r1.ehQuadrado():
+    print("É um quadrado")
+else:
+    print("Não é um quadrado")
+
+print("")
+# Mostra os dados dos objetos:
 print('=== Triangulo 2 ===')
 print(str(r2))
-print(r2.area())
-print(r2.perimetro())
-print(r2.relacao())
-print(r2.ehQuadrado())
+print("Aréa = ", r2.area())
+print("Perímetro = ", r2.perimetro())
+print("Relação = ", r2.relacao())
+
+if r2.ehQuadrado():
+    print("É um quadrado")
+else:
+    print("Não é um quadrado")
+
+print("########")
