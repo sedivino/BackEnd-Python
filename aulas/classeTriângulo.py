@@ -5,6 +5,8 @@
 class Triangulo:
     # Método construtor (Utilizado para criar objeto)
     def __init__(self, base, altura):
+        if base <= 0 or altura <= 0:
+            raise ValueError("Base e Altura devem ser maior que zero.")
         self.__base = base
         self.__altura = altura
 
